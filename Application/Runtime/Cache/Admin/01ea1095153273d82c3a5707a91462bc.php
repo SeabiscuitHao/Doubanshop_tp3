@@ -70,7 +70,7 @@
                                 <td><?php echo ($vo["goods_info"]); ?></td>
                                 <td><?php echo ($vo["price"]); ?></td>
                                 <td>
-                                    <img src="/Public<?php echo ($vo["image"]); ?>" width="100" height="auto" alt="无图片">
+                                    <img src="http://dbshop.com/<?php echo ($vo["image"]); ?>" width="100" height="auto" alt="无图片">
                                 </td>
                                 <td><?php echo ($vo["tag_id"]); ?></td>
                                 <td><?php echo ($vo["status"]); ?></td>

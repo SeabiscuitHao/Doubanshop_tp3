@@ -27,7 +27,7 @@ class GoodsController extends CommonController {
             $value['tag_id'] = $tagInfo;
             $lists[$key] = $value;
         }
-
+        // var_dump($_SERVER['HTTP_HOST']);die();
         $this->assign('lists', $lists);
         $this->display();
     }
@@ -42,11 +42,11 @@ class GoodsController extends CommonController {
 
         $image = uploadFile('image');
         $title = I('post.goods_name', '');
-        $info = I('post.goods_info', '');
+        $info  = I('post.goods_info', '');
         $price = I('post.price', 0);
         $price = $price * 100;
-        $tags = I('post.tag_id','');
-        $tags = implode(",", $tags);
+        $tags  = I('post.tag_id','');
+        $tags  = implode(",", $tags);
         
 
         $data = array(
