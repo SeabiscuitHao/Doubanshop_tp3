@@ -172,12 +172,13 @@ a {
 }
 .mess-i>i {
 	color: #ff966b;
-	font-size: 0.24rem;
+	font-size: 0.20rem;
 	display: block;
+	margin-bottom: 0.03rem;
 }
 .mess-i>span {
 	display: block;
-	font-size: 0.10rem;
+	font-size: 0.12rem;
 	padding-left: 0.02rem;
 	color: #9a9a9a;
 }

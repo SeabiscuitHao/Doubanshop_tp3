@@ -33,17 +33,19 @@
 		</div>
 		<div class="list-cntent clearfix">
 
-			<?php if(is_array($goods)): $i = 0; $__LIST__ = $goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo['status'] == 1): ?><div>
+			<?php if(is_array($lists)): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo['status'] == 1): ?><div>
 						<a href="javascript:void(0)">
 							<div class="content-img">
-								<img src="/Public/Home/images/e020e63fbde3646.jpg" alt="">
+								<img src="http://dbshop.com/<?php echo ($vo["image"]); ?>" alt="">
 							</div>
 							<div class="content-text">
 								<h3><?php echo ($vo["goods_name"]); ?></h3>
 								<p><?php echo ($vo["goods_info"]); ?></p>
 								<b>
 								<?php $vo['price'] /= 100; echo sprintf("%0.2f",$vo['price']); ?>
-								</b><span><?php echo ($vo["type"]); ?></span>
+								</b>
+									<?php $tag = array(); $tag = explode(',',$vo['tag_id']); foreach($tag as $v) { echo "<span>$v</span> "; } ?>
+								
 							</div>
 						</a>
 					</div><?php endif; endforeach; endif; else: echo "" ;endif; ?>

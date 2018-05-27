@@ -37,12 +37,12 @@
 		</div>
 		<div class="list-cntent clearfix">
 
-			<volist name="goods" id="vo">
+			<volist name="lists" id="vo">
 				<if condition="$vo['status'] eq 1">
 					<div>
 						<a href="javascript:void(0)">
 							<div class="content-img">
-								<img src="__PUBLIC__/Home/images/e020e63fbde3646.jpg" alt="">
+								<img src="http://dbshop.com/{$vo.image}" alt="">
 							</div>
 							<div class="content-text">
 								<h3>{$vo.goods_name}</h3>
@@ -51,7 +51,12 @@
 								<?php $vo['price'] /= 100;
 								echo sprintf("%0.2f",$vo['price']);
 								?>
-								</b><span>{$vo.type}</span>
+								</b>
+									<?php $tag = array();
+									$tag = explode(',',$vo['tag_id']);
+									foreach($tag as $v) {
+										echo "<span>$v</span> ";
+									} ?>
 							</div>
 						</a>
 					</div>

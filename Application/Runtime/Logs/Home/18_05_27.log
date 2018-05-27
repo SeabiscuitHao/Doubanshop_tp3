@@ -1,0 +1,457 @@
+[ 2018-05-27T10:38:00+08:00 ] 127.0.0.1 /Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Address
+
+[ 2018-05-27T10:39:15+08:00 ] 127.0.0.1 /Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Address
+
+[ 2018-05-27T10:40:52+08:00 ] 127.0.0.1 /Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-05-27T10:40:52+08:00 ] 127.0.0.1 /Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-05-27T10:40:53+08:00 ] 127.0.0.1 /Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-05-27T10:40:53+08:00 ] 127.0.0.1 /Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-05-27T10:40:53+08:00 ] 127.0.0.1 /Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-05-27T10:41:12+08:00 ] 127.0.0.1 /Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2018-05-27T10:41:37+08:00 ] 127.0.0.1 /Home/Address/addAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0006s ]
+ERR: 1364:Field 'password' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `tb_user` (`username`,`phone`,`createtime`) VALUES ('郝帅','15945678945','2018-05-27,10:41:37')
+ERR: 1364:Field 'password' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `tb_user` (`username`,`phone`,`createtime`) VALUES ('郝帅','15945678945','2018-05-27,10:41:37')
+
+[ 2018-05-27T10:43:31+08:00 ] 127.0.0.1 /Home/Address/addAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-05-27T10:48:15+08:00 ] 127.0.0.1 /Home/Address/addAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-05-27T10:48:53+08:00 ] 127.0.0.1 /Home/Address/addAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-05-27T10:50:10+08:00 ] 127.0.0.1 /Home/Address/addAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-05-27T10:51:27+08:00 ] 127.0.0.1 /Home/Address/addAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `tb_address` [ RunTime:0.0022s ]
+SQL: INSERT INTO `tb_address` (`user_id`,`username`,`phone`,`province`,`city`,`area`,`info`,`createtime`) VALUES ('1','郝帅','15945678945','北京市','北京市市辖区','东城区','北华大学','2018-05-27,10:51:27') [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2018-05-27T10:51:28+08:00 ] 127.0.0.1 /Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-05-27T14:01:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014249s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_banner` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tb_banner`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006363s ]
+
+[ 2018-05-27T14:01:42+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tb_banner` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tb_banner`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2018-05-27T14:40:41+08:00 ] 127.0.0.1 /Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-05-27T14:41:06+08:00 ] 127.0.0.1 /Home/Address/addAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `tb_address` [ RunTime:0.0069s ]
+ERR: 1048:Column 'user_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `tb_address` (`user_id`,`username`,`phone`,`province`,`city`,`area`,`info`,`createtime`) VALUES (NULL,'小王','13679795989','天津市','天津市郊县','','天津大学','2018-05-27,14:41:06')
+ERR: 1048:Column 'user_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `tb_address` (`user_id`,`username`,`phone`,`province`,`city`,`area`,`info`,`createtime`) VALUES (NULL,'小王','13679795989','天津市','天津市郊县','','天津大学','2018-05-27,14:41:06')
+
+[ 2018-05-27T14:42:20+08:00 ] 127.0.0.1 /Home/User/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:address
+
+[ 2018-05-27T14:42:25+08:00 ] 127.0.0.1 /Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2018-05-27T14:42:34+08:00 ] 127.0.0.1 /Home/Address/addAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+
+[ 2018-05-27T14:42:37+08:00 ] 127.0.0.1 /Home/Address/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:User
+
+[ 2018-05-27T14:42:58+08:00 ] 127.0.0.1 /Home/Address/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:User
+
+[ 2018-05-27T14:43:12+08:00 ] 127.0.0.1 /Home/Address/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:User
+
+[ 2018-05-27T14:43:16+08:00 ] 127.0.0.1 /Home/Address/addAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+
+[ 2018-05-27T14:43:19+08:00 ] 127.0.0.1 /Home/Address/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:Home
+
+[ 2018-05-27T14:43:50+08:00 ] 127.0.0.1 /Home/Address/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:Home
+
+[ 2018-05-27T14:44:03+08:00 ] 127.0.0.1 /Home/Address/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:Home
+
+[ 2018-05-27T14:44:44+08:00 ] 127.0.0.1 /Home/Address/addAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+
+[ 2018-05-27T14:44:47+08:00 ] 127.0.0.1 /index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2018-05-27T14:45:12+08:00 ] 127.0.0.1 /Home/User/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:address
+

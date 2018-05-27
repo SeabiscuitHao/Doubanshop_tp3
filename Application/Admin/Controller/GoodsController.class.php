@@ -26,7 +26,7 @@ class GoodsController extends CommonController {
             $tagInfo = rtrim($tagInfo,',');
             $value['tag_id'] = $tagInfo;
             $lists[$key] = $value;
-        }
+        } 
         // var_dump($_SERVER['HTTP_HOST']);die();
         $this->assign('lists', $lists);
         $this->display();
@@ -65,8 +65,47 @@ class GoodsController extends CommonController {
             $this->error('发布成功', 'lists');
         }
     }
+    public function edit($id) {
+        $tags = D('Tags')->select();
+        $info = D('Goods')->find($id);
+        $this->assign(array(
+            'res' => $info,
+            'tags' => $tags
+        ));
+        $this->display();
+    }
+
+    public function doEdit() {
+        $info = D('Goods')->find($id);
+        $image = I('post.image','');
+        if (!$image) {
+            $image = $info['image'];
+        }
+        $data = array(
+            'id'            => I('post.id',''),
+            'goods_name'    => I('post.goods_name',''),
+            'goods_info'    => I('post.goods_info'),
+            'price'         => I('post.price'),
+            'tag_id'        => I('post.tag_id',''),
+            'image'         => $image,
+        );
+        $res = D('Goods')->where(array('id'=>$data['id']))->save($data);
+        if ($res != false) {
+            $this->success('修改成功',U('admin/goods/lists'));
+        } else {
+            $this->error('更新失败');
+        }
+    }
 
 
+    public function del($id) {
+        $res = D('Goods')->where(array('id'=>$id))->delete();
+        if ($res != false) {
+            $this->success('删除成功',U('admin/goods/lists'));
+        } else {
+            $this->error('删除失败');
+        }
+    }
     public function online() {
         $id = I('get.id',0);
         if (!$id) {

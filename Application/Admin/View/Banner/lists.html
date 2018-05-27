@@ -11,7 +11,7 @@
         <div class="col-sm-12">
             <div class="ibox">
                 <div class="ibox-title">
-                    <h5>商品管理</h5>
+                    <h5>广告管理</h5>
                 </div>
                 <!-- 检索框 -->
                 <div class="row">
@@ -33,7 +33,7 @@
                                         </select>
                                     </div>
                                     <button class="btn btn-white" type="submit">搜索</button>
-                                    <a href="{:U('admin/goods/add')}" class="btn btn-primary" type="submit" target="_self">新增</a>
+                                    <a href="{:U('admin/banner/add')}" class="btn btn-primary" type="submit" target="_self">新增</a>
                                 </form>
                             </div>
                         </div>
@@ -46,11 +46,9 @@
                         <thead>
                         <tr>
                             <th>ID</th>
-                            <th>商品名字</th>
-                            <th>简介</th>
-                            <th>单价</th>
+                            <th>标题</th>
                             <th>图片</th>
-                            <th>标签</th>
+                            <th>URL</th>
                             <th>状态</th>
                             <th>操作</th>
                         </tr>
@@ -59,25 +57,23 @@
                         <volist name="lists" id="vo">
                             <tr class="gradeX">
                                 <td>{$vo.id}</td>
-                                <td>{$vo.goods_name}</td>
-                                <td>{$vo.goods_info}</td>
-                                <td>{$vo.price}</td>
+                                <td>{$vo.title}</td>
                                 <td>
                                     <img src="http://dbshop.com/{$vo.image}" width="100" height="auto" alt="无图片">
                                 </td>
-                                <td>{$vo.tag_id}</td>
+                                <td><a href="{$vo.url}">{$vo.url}</a></td>
                                 <td>{$vo.status}</td>
                                 <td>
                                     <?php if ($vo['status'] == 0 || $vo['status'] == 2 ) { ?>
-                                    <a href="{:U('admin/goods/online', array('id'=>$vo['id']))}" target="_self">上线</a>
+                                    <a href="{:U('admin/banner/online', array('id'=>$vo['id']))}" target="_self">上线</a>
                                     <?php } ?>
 
                                      <?php if ($vo['status'] == 1) { ?>
-                                    <a href="{:U('admin/goods/offline',array('id'=>$vo['id']))}"  target="_self">下线</a>
+                                    <a href="{:U('admin/banner/offline',array('id'=>$vo['id']))}"  target="_self">下线</a>
                                      <?php } ?>
                                     </br>
-                                    <a href="{:U('admin/goods/edit',array('id'=>$vo['id']))}"  target="_self">修改</a></br>
-                                    <a href="{:U('admin/goods/del',array('id'=>$vo['id']))}"  target="_self">删除</a>
+                                    <a href="{:U('admin/banner/edit',array('id'=>$vo['id']))}"  target="_self">修改</a></br>
+                                    <a href="{:U('admin/banner/del',array('id'=>$vo['id']))}"  target="_self">删除</a>
                                 </td>
                             </tr>
                         </volist>
