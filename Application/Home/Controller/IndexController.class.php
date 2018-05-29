@@ -26,5 +26,12 @@ class IndexController extends Controller {
 		));
 		$this->display();
 	}
+
+    public function info() {
+        $id = $_GET['id'];
+        $lists = D('Goods')->getInfoById($id);
+        $this->assign('lists',$lists);
+        $this->display();
+    }
 	
 }

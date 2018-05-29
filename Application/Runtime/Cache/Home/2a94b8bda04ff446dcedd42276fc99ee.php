@@ -25,7 +25,7 @@
 
 	<div class="box-user clearfix">
 		<a href="javascript:void(0)"><i class="iconfont">&#xe61a;</i>购物车</a>
-		<a href="javascript:void(0)"><i class="iconfont">&#xe60c;</i>我的中心</a>
+		<a href="Home/User/people"><i class="iconfont">&#xe60c;</i>我的中心</a>
 	</div>
 	<div class="box-list">
 		<div class="list-header">
@@ -34,7 +34,7 @@
 		<div class="list-cntent clearfix">
 
 			<?php if(is_array($lists)): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo['status'] == 1): ?><div>
-						<a href="javascript:void(0)">
+						<a href="Home/Index/info?id=<?php echo ($vo["id"]); ?>">
 							<div class="content-img">
 								<img src="http://dbshop.com/<?php echo ($vo["image"]); ?>" alt="">
 							</div>
@@ -45,7 +45,6 @@
 								<?php $vo['price'] /= 100; echo sprintf("%0.2f",$vo['price']); ?>
 								</b>
 									<?php $tag = array(); $tag = explode(',',$vo['tag_id']); foreach($tag as $v) { echo "<span>$v</span> "; } ?>
-								
 							</div>
 						</a>
 					</div><?php endif; endforeach; endif; else: echo "" ;endif; ?>

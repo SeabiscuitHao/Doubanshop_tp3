@@ -6,4 +6,7 @@ class GoodsModel extends Model {
 		$res = $this->order('createtime asc')->limit(8)->select();
 		return $res;
 	}
+	public function getInfoById($id) {
+		return $this->where(array('id'=>$id))->find();
+	}
 }

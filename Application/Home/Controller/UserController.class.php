@@ -45,7 +45,7 @@ class UserController extends Controller {
 			$this->error('注册失败');
 		}
 	}
-
+	
 	public function people() {
 		$this->display();
 	}

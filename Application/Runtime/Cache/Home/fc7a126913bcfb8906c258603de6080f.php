@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>个人中心</title>
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/people.css">
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/iconfont.css">
-	<script src="__PUBLIC__/Home/js/jquery-3.2.0.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/Public/Home/css/people.css">
+	<link rel="stylesheet" href="/Public/Home/css/iconfont.css">
+	<script src="/Public/Home/js/jquery-3.2.0.min.js" type="text/javascript"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
 </head>
 <body>
@@ -18,7 +18,7 @@
 		</div>
 	</div>
 	<div class="people-img">
-		<img src="__PUBLIC__/Home/images/user_large.jpg" alt="">
+		<img src="/Public/Home/images/user_large.jpg" alt="">
 		<span>哈哈哈</span>
 	</div>
 	<div class="people-list">
