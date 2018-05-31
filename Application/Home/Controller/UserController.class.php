@@ -6,6 +6,11 @@ class UserController extends Controller {
 	public function login() {
 		return $this->display();
 	}
+
+	public function logout() {
+		session(null);
+		$this->success('注销成功',U('Home/User/login'));
+	}
 	
 	public function doLogin() {
 		$phone 		= empty($_POST['phone']) ? '' : $_POST['phone'];
@@ -18,6 +23,8 @@ class UserController extends Controller {
 			if ($res['password'] == $password) {
 				session('id',$res['id']);
 				$this->success('登陆成功',U('Index/index'));
+			} else {
+				$this->error('密码不正确');
 			}
 		} else {
 			$this->error('用户不存在');
@@ -47,6 +54,12 @@ class UserController extends Controller {
 	}
 	
 	public function people() {
+		$id = session('id');
+		if (empty($id)) {
+			$this->error('请先登录',U('Home/User/login'));
+		}
+		$userInfo = D('User')->where(array('id'=>$id))->find();
+		$this->assign('userInfo',$userInfo);
 		$this->display();
 	}
 }

@@ -11,7 +11,6 @@
 	<title>首页</title>
 </head>
 <body>
-
 	<div class="box-swiper" id="box-swiper">
 		<div class="swiper-container">
 			<div class="swiper-wrapper clearfix">
@@ -24,8 +23,8 @@
 	</div>
 
 	<div class="box-user clearfix">
-		<a href="javascript:void(0)"><i class="iconfont">&#xe61a;</i>购物车</a>
-		<a href="Home/User/people"><i class="iconfont">&#xe60c;</i>我的中心</a>
+		<a href="<?php echo U('Home/Cart/cart');?>"><i class="iconfont">&#xe61a;</i>购物车</a>
+		<a href="<?php echo U('Home/User/people');?>"><i class="iconfont">&#xe60c;</i>我的中心</a>
 	</div>
 	<div class="box-list">
 		<div class="list-header">
@@ -34,7 +33,7 @@
 		<div class="list-cntent clearfix">
 
 			<?php if(is_array($lists)): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo['status'] == 1): ?><div>
-						<a href="Home/Index/info?id=<?php echo ($vo["id"]); ?>">
+						<a href="<?php echo U('Home/Index/info',array('id'=>$vo['id']));?>">
 							<div class="content-img">
 								<img src="http://dbshop.com/<?php echo ($vo["image"]); ?>" alt="">
 							</div>

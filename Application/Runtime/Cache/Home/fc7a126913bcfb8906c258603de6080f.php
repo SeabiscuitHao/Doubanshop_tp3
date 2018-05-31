@@ -19,11 +19,13 @@
 	</div>
 	<div class="people-img">
 		<img src="/Public/Home/images/user_large.jpg" alt="">
-		<span>哈哈哈</span>
+		<?php if($userInfo['username'] != '' ): ?><span><?php echo ($userInfo['username']); ?></span>
+		<?php else: ?>
+			<a href="<?php echo U('Home/User/login');?>">登陆</a><?php endif; ?>
 	</div>
 	<div class="people-list">
 		<div class="item-list clearfix">
-			<a href="javascript:void(0)">
+			<a href="<?php echo U('Home/Order/lists');?>">
 				查看全部订单
 				<i class="iconfont">&#xe63b;</i>
 			</a>
@@ -75,7 +77,7 @@
 		</div>
 	</div>
 	<div class="footer">
-		<a href="javascript:void(0)">注销登录</a>
+		<a href="<?php echo U('Home/User/logout');?>">注销登录</a>
 	</div>
 </body>
 </html>
