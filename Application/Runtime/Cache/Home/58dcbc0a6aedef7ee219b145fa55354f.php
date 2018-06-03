@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="/Public/Home/css/info.css">
 	<link rel="stylesheet" href="/Public/Home/css/iconfont.css">
 	<script src="/Public/Home/js/jquery-3.2.0.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 </head>
 <body>
 	<div class="info-tal">
@@ -24,7 +25,7 @@
 		</div>
 	</div>
 
-	<form action="<?php echo U('Home/Cart/cartlist');?>" method="post">
+	<form  method="post">
 		<div class="new-buy">
 			<div class="box-buy">
 				<div class="buy-list clearfix">
@@ -37,10 +38,10 @@
 					</div>
 				</div>
 
-				<input type="hidden" name="id" value="<?php echo ($lists["id"]); ?>">
-				<input type="hidden" name="goods_name" value="<?php echo ($lists["goods_name"]); ?>">
-				<input type="hidden" name="price" value="<?php echo ($p); ?>">
-				<input type="hidden" name="image" value="<?php echo ($lists["image"]); ?>">
+				<input type="hidden" name="goods_id" value="<?php echo ($lists["id"]); ?>" class="goods_id">
+				<input type="hidden" name="goods_name" value="<?php echo ($lists["goods_name"]); ?>" class="goods_name">
+				<input type="hidden" name="price" value="<?php echo ($p); ?>" class="price">
+				<input type="hidden" name="image" value="<?php echo ($lists["image"]); ?>" class="image">
 				<div class="style-list">
 					<p>款式：</p>
 					<div>
@@ -59,7 +60,7 @@
 					<p>数量：</p>
 					<div class="intro-jinumber">
 						<input id="min" name="" type="button" value="-" / style="border: none; background-color: #f7f7f7;"> 
-						<input id="text_box" name="count" type="text" value="1" style="width:30px;text-align: center;border:none"/> 
+						<input id="text_box" name="count" type="text" value="1" style="width:30px;text-align: center;border:none" class="count"> 
 						<input id="add" name="" type="button" value="+" / style="border: none; background-color: #f7f7f7;"> 
 					</div>
 				</div>
@@ -68,8 +69,8 @@
 				<div><a href="javascript:void(0)">
 					<i class="iconfont">&#xe647;</i><sup>0</sup>
 				</a></div>
-				<input type="submit" name="" value="加入购物车">
-				<a href="javascript:void(0)" >立即购买</a>
+				<input type="button" name="" value="加入购物车" class="cart">
+				<input type="button" name="" style="background-color: red;color: white" value="立即购买" class="pay">
 			</div>
 		</div>
 	</form>
@@ -86,6 +87,56 @@
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			$('.cart').click(function() {
+				var gid = $('.goods_id').val();
+				var num = $('.count').val();
+				var name = $('.goods_name').val();
+				var price = $('.price').val();
+				var image = $('.image').val();
+				$.ajax({
+					url 	 : "<?php echo U('Home/Cart/cartlist');?>",
+					type 	 : "post",
+					dataType : "json",
+					data 	 : {goods_id:gid,count:num,goods_name:name,price:price,image:image},
+					success  : function(res) {
+						console.log(res);
+						if (res.error_no == 0) {
+							window.location.href = "<?php echo U('Home/Index/index');?>";
+						} else {
+							alert(res.msg);
+						}
+					}
+				});
+			});
+
+			$('.pay').click(function() {
+				var gid = $('.goods_id').val();
+				var num = $('.count').val();
+				var name = $('.goods_name').val();
+				var price = $('.price').val();
+				var image = $('.image').val();
+				$.ajax({
+					url 	 : "<?php echo U('Home/order/ordertmp');?>",
+					type 	 : "post",
+					dataType : "json",
+					data 	 : {goods_id:gid,count:num},
+					success  : function(res) {
+						console.log(res);
+						if (res.error_no == 0) {
+							window.location.href = "/index.php/Home/order/confirmOrder?oid="+res.data.oid;
+							// console.log(res);
+						} else {
+							alert(res.msg);
+						}
+					}
+				});
+			});
+		})
+	</script>
+
 	<script src="/Public/Home/js/info.js"></script>
 	<script>
      $(window).scroll(function(){

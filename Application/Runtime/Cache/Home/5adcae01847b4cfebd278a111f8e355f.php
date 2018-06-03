@@ -40,7 +40,7 @@
 					<img src="http://dbshop.com/<?php echo ($vo["image"]); ?>" alt="">
 					<div class="cars-content">
 						<p> <?php echo ($vo["goods_name"]); ?> <a href="javascript:void(0)" class="deleta">删除</a></p>
-						<p class="p-cars">玫瑰花茶-玫瑰红茶</p>
+						<p class="p-cars"> <?php echo ($vo["goods_name"]); ?>  </p>
 						<div class="intro-jinumber">
 							<input class="min" name="" type="button" value="-" / style="border: none; background-color: #f7f7f7;"> 
 							<input class="text_box" name="" type="text" value="<?php echo ($vo["goods_num"]); ?>" style="width:30px;text-align: center;border:none"/> 
@@ -63,7 +63,7 @@
 					<b>￥99.00</b>
 					<p>（不含运费）</p>
 				</span>
-				<a href="javascript:void(0)" class="car-true"> 请选择</a>
+				<a href="javascript:void(0)" class="car-true"> 请选择 </a>
 			</div>
 		</div>
 	</div>
