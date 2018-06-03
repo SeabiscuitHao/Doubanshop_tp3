@@ -1,4 +1,4 @@
-body,html,div,p,a,b,span,img {
+body,html,div,p,a,b,span,img,input,button {
 	padding: 0;
 	margin: 0;
 }
@@ -150,7 +150,50 @@ body,html {
     border:1px solid #0aa082;
     border-radius: 100%;
     position: relative;
-    top: 0.03rem;
+    top: 0.02rem;
+} 
+.clearfix::after {
+	display: block;
+	content:"";;
+	clear: both;
+	height: 0;
+}
+.piao-new {
+	padding: 0.1rem 0.15rem;
+	border-bottom:1px solid #e4e4e4;
+    background: #fff;
+    margin-bottom: 0.15rem;
+}
+.coupon-box .piao-new>span {
+	display: inline-block;
+	font-size: 0.14rem;
+	color: #9a9a9a;
+	float: left;
+	position: relative;
+}
+.piao-new .one-make>b {
+	position: absolute;
+	display: inline-block;
+	left: 0.25rem;
+	top: -0.02rem;
+	font-weight: 520;
+	color: #494949;
+	font-size: 0.14rem;
+	width: 1rem;
+	margin-right: 0.12rem;
+} 
+.coupon-box .piao-new .one-make {
+	width:0.15rem;
+    height:0.15rem;
+    background: #fff;
+    border:1px solid #0aa082;
+    border-radius: 100%;
+    position: relative;
+    top: 0.02rem;
+    margin-right: 0.15rem;
+}
+.one-make {
+	/*margin-left: 0.15rem;*/
 }
 .one-way>span:last-child:after {
     content: '';
@@ -232,4 +275,185 @@ a {
 	font-size: 0.16rem;
     color: #f05f50;
     display: inline-block;
+}
+.coupon-new {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	bottom:0;
+}
+.coupon-box {
+	display: none;
+	background: #fff;
+	font-size:0;
+}
+.coupon-title {
+	font-size: 0.16rem;
+	padding: 0.12rem 0.15rem;
+	color: #9a9a9a;
+	background: #f7f7f7;
+}
+.coupon-title>i {
+	position: absolute;
+	right: 0.15rem;
+	top: 0.14rem;
+	display: inline-block;
+	width: 0.16rem;
+	height: 0.16rem;
+}
+.coupon-title>i:before {
+	display: block;
+    width: 0.02rem;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: "";
+    background: #9a9a9a;
+    -webkit-transform: translate(-50%,-50%) rotate(45deg);
+}
+.coupon-title>i:after {
+	display: block;
+    width: 0.02rem;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: "";
+    background: #9a9a9a;
+    -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+}
+.coupon-content {
+	background: #fff;
+	padding: 0.12rem 0.15rem;
+	width: 100%;
+	display: flex;
+	box-sizing:border-box;
+	border-bottom:0.1rem solid #f7f7f7;
+}
+.coupon-content>input, .coupon-content>button {
+	display: inline-block;
+	height: 0.36rem;
+	line-height: 0.36rem;
+	vertical-align: middle;
+}
+.coupon-content>input {
+	flex:4;
+	font-size: 0.14rem;
+	padding: 0 0.08rem;
+	color: #e4e4e4;
+	border:1px solid #e4e4e4;;
+}
+.coupon-content>input:focus{
+	outline: none;
+}
+.coupon-content>button {
+	flex:1;
+	background-color: #bdbdbd;
+    color: #fff;
+    text-align: center;
+    border:1px solid #bdbdbd;
+	height: 0.38rem;
+}
+.coupon-have {
+	font-size: 0;
+	padding: 0.2rem 0;
+	position: relative;
+	text-align: center;
+	height: 1rem;
+}
+.coupon-have>a {
+	display: block;
+	color: #5c5c5c;
+    text-decoration: underline;
+    font-size: 0.12rem;
+}
+.coupon-have>a:last-child {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0.15rem;
+	text-align: center;
+}
+.coupon-have>a>span {
+	color: #5c5c5c;
+    font-size: 0.12rem;
+}
+.piao-tab {
+	margin-bottom: 0.15rem;
+	font-size: 0;
+	padding: 0.1rem 0.15rem;
+	background: #fff;
+}
+.biao-zhu {
+	display: inline-block;
+	color: #9a9a9a;
+	font-size: 0.14rem;
+	width: 0.85rem;
+}
+.no-body>div, .no-body>span {
+	display: inline-block;
+}
+.no-body>div>p {
+	display: inline-block;
+	padding-right: 0.15rem;
+	font-size: 0.14rem;
+	color: #494949;
+}
+.piao-tab>p {
+	display: inline-block;
+	padding-right: 0.15rem;
+	font-size: 0.14rem;
+	color: #494949;
+}
+.tab-set, .newtab-set>span  {
+	width:0.15rem;
+    height:0.15rem;
+    background: #fff;
+    border:1px solid #0aa082;
+    border-radius: 100%;
+    position: relative;
+    top: 0.02rem;
+    display: inline-block;
+    margin-right: 0.04rem;
+}
+.tab-set:after{
+	content: '';
+    display: inline-block;
+    background: #fff;
+    width: 0.09rem;
+    height: 0.09rem;
+    border-radius: 100%;
+    position: absolute;
+    top:0.03rem;
+    left:0.03rem;
+}
+.newtab-set>span:after {
+	content: '';
+    display: inline-block;
+    background: #0aa082;
+    width: 0.09rem;
+    height: 0.09rem;
+    border-radius: 100%;
+    position: absolute;
+    top:0.03rem;
+    left:0.03rem;
+}
+.piaolist-white {
+	color: #fff;
+}
+.piaolist-text {
+	display: inline-block;
+}
+.piaolist-text>input {
+    border:0;
+    color: #494949;
+    font-size: 0.14rem;
+    width: 2rem;
+}
+.piaolist-text>input:focus {
+	outline: none;
+}
+.hide {
+	display: none;
 }

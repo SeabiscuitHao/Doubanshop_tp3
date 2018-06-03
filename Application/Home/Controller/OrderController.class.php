@@ -33,16 +33,16 @@ class OrderController extends Controller {
 				$cart = json_decode($cart,true);
 			}
 			foreach ($cart as $key => $value) {
-				$res = D('Cart')->getBasicByInfo($value);
+				$resTmp = D('Cart')->getBasicInfo($value);
 				$tmp = array(
-					'goodsId'	=> $res['goods_id'],
-					'count'		=> $res['count'],
+					'goodsId'	=> $resTmp['goods_id'],
+					'count'		=> $resTmp['goods_num'],
 				);
 				$goodsInfo[] = $tmp;
 			}
 		} else {
 			$goodsInfo[] = array(
-				'goodsId'	=> $goods_id,
+				'goodsId'	=> $goodsId,
 				'count'		=> $count,
 			);
 		}
@@ -68,12 +68,17 @@ class OrderController extends Controller {
 
 	public function confirmOrder() {
 		$oid  = I('get.oid','');
-		$list = D('orderTmp')->getbasicInfo($oid);
-		$orderInfo = json_decode($list['goodsInfo'],true);
+		$list = D('orderTmp')->getBasicInfo($oid);
+		$orderInfo = json_decode($list['goods_info'],true);
 		foreach ($orderInfo as $key => $value) {
-			$goodsInfo = D('Goods')->getBasicInfo($orderInfo[$key]['goods_id']);
+			$goodsInfo = D('Goods')->getBasicInfo($orderInfo[$key]['goodsId']);
 			$orderInfo[$key] = array_merge($orderInfo[$key],$goodsInfo);
 		}
+		$id = session('id');
+		$where = array('user_id'=>$id);
+		$add = D('Address')->getList($where);
+		$user_add = $add['0'];
+		$this->assign('user',$user_add);
 		$this->assign('orderInfo',$orderInfo);
 		$this->display();
 	}

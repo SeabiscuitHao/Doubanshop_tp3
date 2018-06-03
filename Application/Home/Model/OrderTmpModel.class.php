@@ -3,6 +3,6 @@ namespace Home\Model;
 
 use Think\Model;
 
-class OrderTmpModel extends Model {
+class OrderTmpModel extends BaseModel {
 	
 }

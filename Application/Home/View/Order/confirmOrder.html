@@ -10,24 +10,24 @@
 	<script src="__PUBLIC__/Home/js/jquery-3.2.0.min.js"></script>
 </head>
 <body>
-	<div class="oid-address">
-		<p>收货地址</p>
-		<div class="goods-address">
-			<p>
-				收货人：
-				<span>
-				   哈哈哈   13244236768
-				</span>
-			</p>
-			<p>
-				北京市/东城区/什么小区
-			</p>
-			<i class="iconfont">&#xe63b;</i>
+		<div class="oid-address">
+			<p>收货地址</p>
+			<div class="goods-address">
+				<p>
+					收货人：
+					<span>
+					   {$user.username}   {$user.phone}
+					</span>
+				</p>
+				<p>
+					{$user.province}/{$user.city}/{$user.area}
+				</p>
+				<i class="iconfont">&#xe63b;</i>
+			</div>
 		</div>
-	</div>
-	<volist name="orderInfo" id="vo" >
-		<div class="oid-things">
-		    <p class="new-oid">豆瓣市集</p>
+	<div class="oid-things">
+	    <p class="new-oid">豆瓣市集</p>
+		<volist name="orderInfo" id="vo" >
 			<div class="list-img clearfix ">
 				<img src="http://dbshop.com/{$vo.image}" alt="">
 				<div class="img-about">
@@ -35,12 +35,13 @@
 					<span class="oid-exp">{$vo.goods_info}</span>
 					<p>
 						<span>数量{$vo.count}</span>
-						<span>￥{$vo.price} * {$vo.count}</span>
+						<span>￥<?php echo $p = sprintf("%0.2f",$vo['price']/100); ?> * {$vo.count}</span>
 					</p>
 				</div>
 			</div>
-		</div>
-	</volist>
+		</volist>
+	</div>
+
 	<div class="oid-things">
 	    <div class="list-oid clearfix click-coupon" >
 	    	<span>优惠券</span>
@@ -64,7 +65,7 @@
 	    	<span><i class="iconfont">&#xe63b;</i></span>
 	    </div>
 	    <div class="list-oid clearfix select-oid">
-	        <input type="text" placeholder="备注（请输入 100 字以内留言）">
+	        <input type="text" placeholder="备注（请输入 100 字以内留言 ">
 	    	<p>请在下单30分钟内付款，否则将取消订单</p>
 	    </div>
 	</div>
@@ -195,7 +196,7 @@
 			<div class="all-select" style="font-size:0.14rem">
 				应付 : 
 			    <span class="select-show">
-				    <b>￥99.0</b>
+				    <b>￥{$orderInfo['price']}</b>
 			    </span>
 			</div>
 			<a href="javascript:void(0)" class="car-newtrue"> 提交订单</a>

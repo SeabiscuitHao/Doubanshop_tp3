@@ -23,7 +23,7 @@ $(document).ready(function(){
 			var prices = $(this).parent().siblings().children("").children("span").text();
 			console.log(prices)
 			//改：结算只适用一个
-			$(".select-show").children("b").text(prices)
+			// $(".select-show").children("b").text(prices)
 			$(".select-show").addClass("new-select");
 			$(".car-true").addClass("car-newtrue");
             return false;
@@ -31,7 +31,7 @@ $(document).ready(function(){
         	$(this).addClass("labelId").removeClass("label-select")
             $(".all-select>label").addClass("labelId").removeClass("label-select");
             //改：结算只适用一个
-            $(".select-show").children("b").text("￥0.00");
+            // $(".select-show").children("b").text("￥0.00");
             $(".car-true").removeClass("car-newtrue");
         	return false;
         }

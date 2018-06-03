@@ -1,7 +1,7 @@
 <?php
 namespace Home\Model;
 use Think\Model;
-class BannerModel extends Model {
+class BannerModel extends BaseModel {
 	public function getBanner() {
 		$cache_key = "banner_lists";
 		$result = cache_get($cache);

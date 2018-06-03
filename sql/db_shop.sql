@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2018-06-02 10:07:31
+Date: 2018-06-03 16:59:55
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -79,16 +79,18 @@ CREATE TABLE `tb_cart` (
   `updatetime` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `image` varchar(255) DEFAULT '',
   `goods_name` varchar(255) NOT NULL DEFAULT '',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_goods` (`goods_id`,`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tb_cart
 -- ----------------------------
-INSERT INTO `tb_cart` VALUES ('13', '1', '1', '2', '49', '1', '2018-05-31 12:47:53', null, './Uploads/2018-05-24/5b067fd0b7155.JPG', '挂耳咖啡');
-INSERT INTO `tb_cart` VALUES ('14', '5', '1', '1', '50', '1', '2018-05-31 16:52:39', null, './Uploads/2018-05-24/5b06837350b9a.jpg', 'wanfan');
-INSERT INTO `tb_cart` VALUES ('15', '1', '1', '1', '49', '1', '2018-05-31 16:54:02', null, './Uploads/2018-05-24/5b067fd0b7155.JPG', '挂耳咖啡');
-INSERT INTO `tb_cart` VALUES ('16', '1', '1', '1', '49', '1', '2018-05-31 16:54:04', null, './Uploads/2018-05-24/5b067fd0b7155.JPG', '挂耳咖啡');
+INSERT INTO `tb_cart` VALUES ('13', '1', '1', '1', '49', '1', '2018-06-03 10:03:52', '2018-06-03 10:03:52', './Uploads/2018-05-24/5b067fd0b7155.JPG', '挂耳咖啡');
+INSERT INTO `tb_cart` VALUES ('14', '5', '1', '111', '50', '1', '2018-06-03 10:11:49', '2018-06-03 10:11:49', './Uploads/2018-05-24/5b06837350b9a.jpg', 'wanfan');
+INSERT INTO `tb_cart` VALUES ('29', '7', '1', '2', '69', '1', '2018-06-03 10:32:29', '2018-06-03 10:32:29', './Uploads/2018-05-26/5b09048eb07d6.jpg', '书包');
+INSERT INTO `tb_cart` VALUES ('30', '6', '1', '4', '80', '1', '2018-06-03 10:04:07', '2018-06-03 10:04:07', './Uploads/2018-05-25/5b07c6d73dc19.png', '麻辣烫');
+INSERT INTO `tb_cart` VALUES ('52', '2', '1', '1', '1', '1', '2018-06-03 10:04:00', '2018-06-03 10:04:00', './Uploads/2018-05-24/5b067fd0b7155.JPG', '1');
 
 -- ----------------------------
 -- Table structure for tb_comment
@@ -161,22 +163,34 @@ INSERT INTO `tb_order` VALUES ('2', '6', '2', '800', '多麻多辣', './Uploads/
 INSERT INTO `tb_order` VALUES ('3', '6', '5', '200', '11', './Uploads/2018-05-25/5b07c6d73dc19.png', '1589555599', '1', '2018-05-30 21:08:05', '2018-05-30 21:08:05', '1');
 
 -- ----------------------------
--- Table structure for tb_orderl
+-- Table structure for tb_order_tmp
 -- ----------------------------
-DROP TABLE IF EXISTS `tb_orderl`;
-CREATE TABLE `tb_orderl` (
+DROP TABLE IF EXISTS `tb_order_tmp`;
+CREATE TABLE `tb_order_tmp` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `goods_id` varchar(255) NOT NULL,
-  `status` int(11) NOT NULL DEFAULT '1',
-  `createtime` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `updatetime` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `goods_info` varchar(255) NOT NULL,
+  `user_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of tb_orderl
+-- Records of tb_order_tmp
 -- ----------------------------
-INSERT INTO `tb_orderl` VALUES ('1', '2,6', '1', '2018-05-29 16:40:13', null);
+INSERT INTO `tb_order_tmp` VALUES ('21', '[{\"goodsId\":\"1\",\"count\":\"1\"}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('22', '[{\"goodsId\":\"1\",\"count\":\"1\"}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('23', '[{\"goodsId\":\"1\",\"count\":\"1\"}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('24', '[{\"goodsId\":\"1\",\"count\":\"1\"}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('25', '[{\"goodsId\":\"1\",\"count\":\"1\"}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('26', '[{\"goodsId\":\"1\",\"count\":\"1\"}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('27', '[{\"goodsId\":\"1\",\"count\":\"1\"}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('28', '[{\"goodsId\":\"5\",\"count\":null},{\"goodsId\":\"7\",\"count\":null}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('29', '[{\"goodsId\":\"5\",\"count\":null},{\"goodsId\":\"2\",\"count\":null}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('30', '[{\"goodsId\":\"1\",\"count\":null},{\"goodsId\":\"5\",\"count\":null}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('31', '[{\"goodsId\":\"2\",\"count\":\"4\"}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('32', '[{\"goodsId\":\"1\",\"count\":null},{\"goodsId\":\"5\",\"count\":null}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('33', '[{\"goodsId\":\"1\",\"count\":\"1\"}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('34', '[{\"goodsId\":\"7\",\"count\":\"2\"}]', '1');
+INSERT INTO `tb_order_tmp` VALUES ('35', '[{\"goodsId\":\"1\",\"count\":\"1\"}]', '1');
 
 -- ----------------------------
 -- Table structure for tb_tags
