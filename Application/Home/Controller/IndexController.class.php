@@ -4,7 +4,6 @@ use Think\Controller;
 use app\Home\Modle\BannerModel;
 class IndexController extends Controller {
 	public function index () {
-       
         $lists = D('Goods')->getList();
         
         foreach ($lists as $key => $value) {
@@ -30,8 +29,14 @@ class IndexController extends Controller {
     public function info() {
         $id = $_GET['id'];
         $lists = D('Goods')->getInfoById($id);
+        $status = D('Goods')->setRank($id);
         $this->assign('lists',$lists);
         $this->display();
+    }
+
+    public function ranklist() {
+        $lists = D('Goods')->gerRank();
+        var_dump($lists);
     }
 	
 }

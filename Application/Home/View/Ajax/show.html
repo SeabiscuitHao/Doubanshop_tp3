@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+<div>
+    <form action="">
+        商品id:<input type="text" name="goods_id" class="goods_id">
+        <br>
+        数量:<input type="text" name="num" class="num">
+        <br>
+        <input type="text" name="" class="ppp">
+        <br>
+        <input type="button" name="cart" value="加入购物车" class="cart">
+        <input type="submit" name="pay" value="立即购买" class="pay">
+    </form>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('.cart').click(function(){
+            var gid = $('.goods_id').val();
+            var num = $('.num').val();
+            $.ajax({
+                url     : "{:U('home/ajax/handle')}",
+                type    : "post",
+                dataType : "json",
+                data    : {goods_id:gid,num:num},
+                success : function(res) {
+                    console.log(res);
+                }
+            });
+        });
+
+        $('.pay').click(function(){
+            var gid = $('.goods_id').val();
+            var num = $('.num').val();
+            $.ajax({
+                url     : "{:U('home/ajax/handlepay')}",
+                type    : "post",
+                dataType : "json",
+                data    : {goods_id:gid,num:num},
+                success : function(res) {
+                    if (res.error_no != 0) {
+                        alert(res.msg)
+                    } else {
+                        $('.ppp').val(res.data.oid);
+                        //window.location.href="/hsdouban/index.php/home/ajax/confirmOrder?oid="+res.data.oid;
+                    }
+                    
+                }
+            });
+            return false;
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,5 +1,4 @@
 <?php
-
 function cache_set($key, $value, $expire=300) {
 	$redis = new Redis();
 	$redis->connect('192.168.199.249',6379);
