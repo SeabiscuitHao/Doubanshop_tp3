@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>购物车</title>
-	<link rel="stylesheet" href="/Public/Home/css/people.css">
-	<link rel="stylesheet" href="/Public/Home/css/cars.css">
-	<link rel="stylesheet" href="/Public/Home/css/iconfont.css">
-	<script src="/Public/Home/js/jquery-3.2.0.min.js"></script>
+	<link rel="stylesheet" href="/hsdouban/Public/Home/css/people.css">
+	<link rel="stylesheet" href="/hsdouban/Public/Home/css/cars.css">
+	<link rel="stylesheet" href="/hsdouban/Public/Home/css/iconfont.css">
+	<script src="/hsdouban/Public/Home/js/jquery-3.2.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
 </head>
 <body>
@@ -67,7 +67,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="/Public/Home/js/cars.js"></script>
+	<script src="/hsdouban/Public/Home/js/cars.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$('.car-true').click(function(){

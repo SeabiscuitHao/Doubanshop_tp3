@@ -4,15 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>确认订单</title>
-	<link rel="stylesheet" href="/Public/Home/css/oid.css">
-	<link rel="stylesheet" href="/Public/Home/css/order.css">
-	<link rel="stylesheet" href="/Public/Home/css/iconfont.css">
-	<script src="/Public/Home/js/jquery-3.2.0.min.js"></script>
+	<link rel="stylesheet" href="/hsdouban/Public/Home/css/oid.css">
+	<link rel="stylesheet" href="/hsdouban/Public/Home/css/order.css">
+	<link rel="stylesheet" href="/hsdouban/Public/Home/css/iconfont.css">
+	<script src="/hsdouban/Public/Home/js/jquery-3.2.0.min.js"></script>
 </head>
 <body>
 		<div class="oid-address">
 			<p>收货地址</p>
-			<div class="goods-address">
+			<?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><div class="goods-address">
 				<p>
 					收货人：
 					<span>
@@ -23,8 +23,9 @@
 					<?php echo ($user["province"]); ?>/<?php echo ($user["city"]); ?>/<?php echo ($user["area"]); ?>
 				</p>
 				<i class="iconfont">&#xe63b;</i>
-			</div>
+			</div><?php endforeach; endif; else: echo "" ;endif; ?>
 		</div>
+
 	<div class="oid-things">
 	    <p class="new-oid">豆瓣市集</p>
 		<?php if(is_array($orderInfo)): $i = 0; $__LIST__ = $orderInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="list-img clearfix ">
@@ -69,20 +70,21 @@
 	</div>
 	<div class="oid-things oid-ways clearfix">
 	    <p>支付方式</p>
-	    <div class="list-oid clearfix ways-list one-way">
+
+	    <?php if(is_array($pay_type)): $i = 0; $__LIST__ = $pay_type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="list-oid clearfix ways-list one-way" rel="<?php echo ($vo["id"]); ?>">
 	    	<span>
-                <img src="/Public/Home/images/weixin.png" alt="">
-	    	    优惠券
+                <img src="/hsdouban/Public/Home/images/weixin.png" alt="">
+	    	    <?php echo ($vo["name"]); ?>
 	    	</span>
 	    	<span></span>
-	    </div>
-	    <div class="list-oid clearfix ways-list">
+	    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+	   <!--  <div class="list-oid clearfix ways-list">
 	    	<span>
-	    	    <img src="/Public/Home/images/zhifubao.png" alt="">
+	    	    <img src="/hsdouban/Public/Home/images/zhifubao.png" alt="">
 	    	   小计
 	    	</span>
 	    	<span></span>
-	    </div>
+	    </div> -->
 	</div>
 	<div class="coupon-box ppiao">
 		<div class="coupon-title">
@@ -200,6 +202,27 @@
 			<a href="javascript:void(0)" class="car-newtrue"> 提交订单</a>
 		</div>
 	</div>
-	<script src="/Public/Home/js/oid.js"></script>
+	<script src="/hsdouban/Public/Home/js/oid.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.car-newtrue').click(function(){
+				var aid = 2;
+				var oid = <?php echo ($_GET['oid']); ?>;
+				var pid = 1;
+
+				console.log(oid);
+				$.ajax({
+					url : "<?php echo U('home/order/createorder');?>",
+					type : "post",
+					dataType : "json",
+					data : {aid:aid, oid:oid, pid:pid},
+					success : function(res) {
+						console.log(res);
+					}
+				});
+			});
+		})
+		
+	</script>
 </body>
 </html>
